@@ -11,7 +11,8 @@ namespace Rax.App.Cmd.Calci
                                             "Multiplication",
                                             "Division",
                                             "Square",
-                                            "Factorial"
+                                            "Factorial",
+                                            "Power"
                                             };
         
         public Menu()
@@ -29,8 +30,9 @@ namespace Rax.App.Cmd.Calci
             Console.WriteLine("\t|  4. Division               |");
             Console.WriteLine("\t|  5. Square                 |");
             Console.WriteLine("\t|  6. Factorial              |");
-            Console.WriteLine("\t|  7. Clear                  |");
-            Console.WriteLine("\t|  8. Exit                   |");
+            Console.WriteLine("\t|  7. Power                  |");
+            Console.WriteLine("\t|  8. Clear                  |");
+            Console.WriteLine("\t|  9. Exit                   |");
             Console.WriteLine("\t+----------------------------+");
           
             int number=Input.ValidateOperation("Enter option to proceed : ");
@@ -58,22 +60,22 @@ namespace Rax.App.Cmd.Calci
         {
             switch(operationType)
             {
-                case 1 : n1=Input.ValidateNumber("Enter first number : ");
+                case 1 : n1=Input.ValidateNumber("Enter first number  : ");
                          n2=Input.ValidateNumber("Enter second number : ");
                          result=Calculator.Add(n1, n2);
                          DisplayResult(operationType-1, result);
                          break;
-                case 2 : n1=Input.ValidateNumber("Enter first number : ");
+                case 2 : n1=Input.ValidateNumber("Enter first number  : ");
                          n2=Input.ValidateNumber("Enter second number : ");
                          result=Calculator.Sub(n1, n2);
                          DisplayResult(operationType-1, result);
                          break;
-                case 3 : n1=Input.ValidateNumber("Enter first number : ");
+                case 3 : n1=Input.ValidateNumber("Enter first number  : ");
                          n2=Input.ValidateNumber("Enter second number : ");
                          result=Calculator.Mul(n1, n2);
                          DisplayResult(operationType-1, result);
                          break;
-                case 4 : n1=Input.ValidateNumber("Enter first number : ");
+                case 4 : n1=Input.ValidateNumber("Enter first number  : ");
                          n2=Input.ValidateNumber("Enter second number : ");
                          result=Calculator.Div(n1, n2);
                          DisplayResult(operationType-1, result);
@@ -86,13 +88,19 @@ namespace Rax.App.Cmd.Calci
                          result=Calculator.Factorial((int)n1);
                          DisplayResult(operationType-1, result);
                          break;
-                case 7 : ClearScreen();DisplayContent();break;
-                case 8 : break;         
+                case 7 : n1=Input.ValidateNumber("Enter base  : ");
+                         n2=Input.ValidateNumber("Enter index : ");
+                         result=Calculator.Power(n1, (int)n2);
+                         DisplayResult(operationType-1, result);
+                         break;
+                case 8 : ClearScreen();DisplayContent();
+                         break;
+                case 9 : Console.WriteLine("");
+                         break;         
                 default: Console.WriteLine("\t\n\nOppsss...Invalid operation\n");
-                         DisplayContent();break;                     
+                         DisplayContent();
+                         break;                     
             }
-        }
-
-        
+        }        
     }
 }

@@ -42,5 +42,22 @@ namespace Rax.App.Cmd.Calci
             }
             return fact;
         }
+    
+
+        public static double Power(double b, int i)
+        {
+            double p=1;
+            if(i==0 && b>0) 
+                return 1;
+            if(i==0 && b==0)
+                return double.NaN;
+            while(i>0)
+            {
+                p*=b;
+                i--;
+            }
+            return p;
+        }
     }
+
 }
