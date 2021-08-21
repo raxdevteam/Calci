@@ -1,0 +1,16 @@
+/home/rajeev/Projects/DotNetCore/Calci/bin/Debug/net5.0/Calci
+/home/rajeev/Projects/DotNetCore/Calci/bin/Debug/net5.0/Calci.deps.json
+/home/rajeev/Projects/DotNetCore/Calci/bin/Debug/net5.0/Calci.runtimeconfig.json
+/home/rajeev/Projects/DotNetCore/Calci/bin/Debug/net5.0/Calci.runtimeconfig.dev.json
+/home/rajeev/Projects/DotNetCore/Calci/bin/Debug/net5.0/Calci.dll
+/home/rajeev/Projects/DotNetCore/Calci/bin/Debug/net5.0/ref/Calci.dll
+/home/rajeev/Projects/DotNetCore/Calci/bin/Debug/net5.0/Calci.pdb
+/home/rajeev/Projects/DotNetCore/Calci/obj/Debug/net5.0/Calci.csproj.AssemblyReference.cache
+/home/rajeev/Projects/DotNetCore/Calci/obj/Debug/net5.0/Calci.GeneratedMSBuildEditorConfig.editorconfig
+/home/rajeev/Projects/DotNetCore/Calci/obj/Debug/net5.0/Calci.AssemblyInfoInputs.cache
+/home/rajeev/Projects/DotNetCore/Calci/obj/Debug/net5.0/Calci.AssemblyInfo.cs
+/home/rajeev/Projects/DotNetCore/Calci/obj/Debug/net5.0/Calci.csproj.CoreCompileInputs.cache
+/home/rajeev/Projects/DotNetCore/Calci/obj/Debug/net5.0/Calci.dll
+/home/rajeev/Projects/DotNetCore/Calci/obj/Debug/net5.0/ref/Calci.dll
+/home/rajeev/Projects/DotNetCore/Calci/obj/Debug/net5.0/Calci.pdb
+/home/rajeev/Projects/DotNetCore/Calci/obj/Debug/net5.0/Calci.genruntimeconfig.cache
